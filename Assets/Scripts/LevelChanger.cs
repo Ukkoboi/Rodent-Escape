@@ -1,14 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (currentSceneIndex == 2)
+            {
+                SceneManager.LoadScene("End Screen");
+            }
+            else
+            {
+                SceneManager.LoadScene(currentSceneIndex + 1);
+            }
+        }
+    }
 }

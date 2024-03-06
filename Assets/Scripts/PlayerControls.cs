@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
@@ -43,6 +44,13 @@ public class PlayerControls : MonoBehaviour
             Vector3 movement = transform.forward * inputVertical * movementspeed;
             rb.velocity = movement;
         }
+    }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

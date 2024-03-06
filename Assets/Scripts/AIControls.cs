@@ -17,7 +17,6 @@ public class AIControls : MonoBehaviour
     public AudioSource audioSource;
 
     private Rigidbody rb;
-    private float t;
     private float AIt;
 
     private GameObject targetObject;
@@ -32,7 +31,6 @@ public class AIControls : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        t = 0f;
         AIt = 0f;
         obstacleMask = LayerMask.GetMask("Obstacle");
         state = State.forward;
@@ -41,8 +39,6 @@ public class AIControls : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        t -= Time.deltaTime;
 
         Vector3 currentRotation = rb.rotation.eulerAngles;
         rb.rotation = Quaternion.Euler(0f, currentRotation.y, 0f);
@@ -145,6 +141,7 @@ public class AIControls : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (!other.gameObject.CompareTag("Obstacle") && !other.gameObject.CompareTag("Wall"))
         {
             return;

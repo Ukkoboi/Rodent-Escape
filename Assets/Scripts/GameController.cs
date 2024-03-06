@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public AudioSource audioSource;
 
     private GameObject player;
+    private GameObject goal;
     public static GameController instance;
     public UIController ui;
 
@@ -27,7 +28,7 @@ public class GameController : MonoBehaviour
             spawner.SpawnEnemy();
         }
 
-        spawner.SpawnGoal();
+        goal = spawner.SpawnGoal();
         player = spawner.SpawnPlayer();
 
     }
@@ -37,11 +38,7 @@ public class GameController : MonoBehaviour
     {
         if (player == null)
         {
-            {
-                ui.ShowEndScreen();
-            }
+            ui.ShowEndScreen();
         }
     }
-
-
 }

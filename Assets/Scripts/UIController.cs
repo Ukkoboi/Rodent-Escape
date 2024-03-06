@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-
     public GameObject pauseMenu;
-    public GameObject respawnScreen;
     public GameObject endScreen;
-    public Text endScore;
 
     // Start is called before the first frame update
     void Start()
@@ -34,32 +31,28 @@ public class UIController : MonoBehaviour
             pauseMenu.SetActive(false);
             Time.timeScale = 1f;
         }
-        else if (!endScreen.activeInHierarchy && !respawnScreen.activeInHierarchy)
+        else if (!endScreen.activeInHierarchy)
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
         }
     }
 
-    public void ShowRespawnScreen()
-    {
-        respawnScreen.SetActive(true);
-    }
-
-    public void HideRespawnScreen()
-    {
-        respawnScreen.SetActive(false);
-    }
-
     public void ShowEndScreen()
     {
-        endScore.text = "Pisteesi: ";
         endScreen.SetActive(true);
     }
 
     public void Restart()
     {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void Unstuck()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
