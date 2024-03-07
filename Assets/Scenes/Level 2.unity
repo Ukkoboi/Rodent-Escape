@@ -825,7 +825,7 @@ MonoBehaviour:
   goal: {fileID: 5631207744229474991, guid: 7c47f80c1e3b943439834db5c935fcb9, type: 3}
   area: {fileID: 1319911233}
   spawnHeight: 0.5
-  enemySpawnHeight: 0
+  enemySpawnHeight: 3.6
   range: 2
 --- !u!1 &963194225
 GameObject:
