@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     public Collider area;
     public float spawnHeight;
+    public float enemySpawnHeight;
 
     public float range;
 
@@ -21,7 +22,24 @@ public class Spawner : MonoBehaviour
 
     public GameObject SpawnEnemy()
     {
-        return Spawn(enemy);
+        // return Spawn(enemy);
+        Vector3 minPoint = area.bounds.min;
+        Vector3 maxPoint = area.bounds.max;
+        float randomx = Random.Range(minPoint.x, maxPoint.x);
+        float randomz = Random.Range(minPoint.z, maxPoint.z);
+
+        Vector3 position = new Vector3(randomx, maxPoint.y + enemySpawnHeight, randomz);
+        Collider[] colliders = Physics.OverlapSphere(position, range);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].CompareTag("Obstacle"))
+            {
+                Destroy(colliders[i].gameObject);
+            }
+        }
+
+        GameObject newObj = Instantiate(enemy, position, new Quaternion());
+        return newObj;
     }
 
     public GameObject SpawnGoal()
