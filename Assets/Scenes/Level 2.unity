@@ -821,10 +821,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1594161914359233754, guid: bb6c4b18ae75a2a4dbb1aaa92eda8e6d, type: 3}
-  enemy: {fileID: 7227650896603669517, guid: 4fb67d6c37f9c084ca5e2cff07c283f6, type: 3}
+  enemy: {fileID: 503489105909946694, guid: 7b129be8cd7a52d4786aaa8b9bc5557d, type: 3}
   goal: {fileID: 5631207744229474991, guid: 7c47f80c1e3b943439834db5c935fcb9, type: 3}
   area: {fileID: 1319911233}
   spawnHeight: 0.5
+  enemySpawnHeight: 0
   range: 2
 --- !u!1 &963194225
 GameObject:
