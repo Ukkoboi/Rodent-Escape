@@ -192,10 +192,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6017399
-  m_Height: 4.748324
+  m_Radius: 0.3537897
+  m_Height: 4.533121
   m_Direction: 1
-  m_Center: {x: 0.0003298521, y: 1.7640221, z: 0.002919674}
+  m_Center: {x: -0.009026766, y: 1.88098, z: 0.13859057}
 --- !u!136 &8470901301610513397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -215,10 +215,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5001006
-  m_Height: 1.7124763
+  m_Radius: 0.47670907
+  m_Height: 1.6937628
   m_Direction: 1
-  m_Center: {x: 0.0003298521, y: 2.7269213, z: 0.9761138}
+  m_Center: {x: 0.0003298521, y: 2.736278, z: 0.95272225}
 --- !u!1 &2981805334868177288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: 8b35522acbd842d4ab3a176139ebb7eb, type: 3}

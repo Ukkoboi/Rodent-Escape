@@ -13,7 +13,7 @@ public class LevelChanger : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            if (currentSceneIndex == 2)
+            if (currentSceneIndex == 3)
             {
                 SceneManager.LoadScene("End Screen");
             }

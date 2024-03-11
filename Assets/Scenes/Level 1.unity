@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8bab82370807224390b9d6193bf16ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1594161914359233754, guid: bb6c4b18ae75a2a4dbb1aaa92eda8e6d, type: 3}
+  player: {fileID: 7536063346876514665, guid: a38dbad2b912275469c99869ee4f4790, type: 3}
   enemy: {fileID: 503489105909946694, guid: 7b129be8cd7a52d4786aaa8b9bc5557d, type: 3}
   goal: {fileID: 5631207744229474991, guid: 7c47f80c1e3b943439834db5c935fcb9, type: 3}
   area: {fileID: 1319911233}
