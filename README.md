@@ -8,9 +8,10 @@
  - Created animations for squirrel
  - First level have 2 enemys, second 3
  - Created 3rd level with x2 area, 50% more obstacles and 5 enemys
- Known issue:
- - Goal might spawn under obstacle tested new fix not 100% sure does it work
- - Lights might bug after completing level
+
+ - Known issue:
+   - Goal might spawn under obstacle tested new fix not 100% sure does it work
+   - Lights might bug after completing level
 
  Version 0.21:
  - Fixed enemy spawn location in level 2. Now enemy spawns correctly in the air.
