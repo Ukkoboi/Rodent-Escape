@@ -3,6 +3,11 @@
 
  You can download different game versions [from my Google Drive](https://drive.google.com/drive/folders/1azWPH_pIacfNtv4SfGLxpjTJ7MHYz9L2?usp=sharing). This repo only contains Unity files what are necessary for Unity to build the game in editor
 
+Version 0.5:
+ - Added score system
+   - You get 100 points for each completed level
+   - If you get caught you lose all points and start from level 1
+
  Version 0.3:
  - Squirrel created and added as player model
  - Created animations for squirrel
