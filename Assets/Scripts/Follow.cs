@@ -9,7 +9,6 @@ public class Follow : MonoBehaviour
 
     private GameObject player;
 
-    // Update is called once per frame
     void Update()
     {
         if (player == null)

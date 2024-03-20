@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 2773200738667848774}
   - component: {fileID: 4462779286431991222}
   m_Layer: 0
-  m_Name: squirrel 1
+  m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

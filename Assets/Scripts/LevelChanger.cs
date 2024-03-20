@@ -9,13 +9,15 @@ public class LevelChanger : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         if (other.gameObject.CompareTag("Player"))
         {
+
             if (currentSceneIndex == 3)
             {
-                SceneManager.LoadScene("End Screen");
+                SceneManager.LoadScene("Level 4");
             }
             else
             {

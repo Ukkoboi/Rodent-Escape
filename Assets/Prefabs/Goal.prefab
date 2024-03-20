@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 762624546276189820}
   - component: {fileID: 3601917065729457653}
   - component: {fileID: 7826020384461929786}
-  - component: {fileID: -6322119541209805366}
   - component: {fileID: 7587084558434916320}
+  - component: {fileID: 9045811141913644367}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Goal
@@ -108,18 +108,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.4152663, z: 1}
   m_Center: {x: 0, y: 0.7076336, z: 0}
---- !u!114 &-6322119541209805366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5631207744229474991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f5317bc4930e04dab868458b9985a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &7587084558434916320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -141,6 +129,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.1834803, z: 1}
   m_Center: {x: 0, y: 0.09174037, z: 0}
+--- !u!114 &9045811141913644367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5631207744229474991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60da18bf7feeddc42bc0d1a498136ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 0}
+  enemyStartingAmount: 0
+  audioSource: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!1 &8861637494241171023
 GameObject:
   m_ObjectHideFlags: 0

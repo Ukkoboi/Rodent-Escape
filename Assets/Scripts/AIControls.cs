@@ -51,7 +51,6 @@ public class AIControls : MonoBehaviour
             target += new Vector3(randomx, 0f, randomz);
         }
 
-        // Etsitään pelaaja
         if (targetObject != null)
         {
             if (Vector3.Distance(transform.position, targetObject.transform.position) < detectRange)
@@ -82,7 +81,6 @@ public class AIControls : MonoBehaviour
             AIt -= Time.deltaTime;
         }
 
-        // Tilakone
         if (state == State.forward)
         {
             stringState = "forward";

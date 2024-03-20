@@ -6,13 +6,9 @@ public class Spawner : MonoBehaviour
 {
     public GameObject player;
     public GameObject enemy;
-
-    public GameObject goal;
-
     public Collider area;
     public float spawnHeight;
     public float enemySpawnHeight;
-
     public float range;
 
     public GameObject SpawnPlayer()
@@ -22,7 +18,6 @@ public class Spawner : MonoBehaviour
 
     public GameObject SpawnEnemy()
     {
-        // return Spawn(enemy);
         Vector3 minPoint = area.bounds.min;
         Vector3 maxPoint = area.bounds.max;
         float randomx = Random.Range(minPoint.x, maxPoint.x);
@@ -40,11 +35,6 @@ public class Spawner : MonoBehaviour
 
         GameObject newObj = Instantiate(enemy, position, new Quaternion());
         return newObj;
-    }
-
-    public GameObject SpawnGoal()
-    {
-        return Spawn(goal);
     }
 
     private GameObject Spawn(GameObject obj)

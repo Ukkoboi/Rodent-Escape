@@ -6,22 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
+    public Text scoreText;
     public GameObject pauseMenu;
     public GameObject endScreen;
+    public GameObject Hud;
+    public Text endScore;
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
             TogglePause();
         }
+    }
+
+    public void SetScore(float score)
+    {
+        scoreText.text = "Score: " + score;
     }
 
     public void TogglePause()
@@ -38,14 +44,11 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void ShowEndScreen()
+    public void ShowEndScreen(float score)
     {
+        Hud.SetActive(false);
+        endScore.text = "Score: " + score;
         endScreen.SetActive(true);
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene("Level 1");
     }
 
     public void Unstuck()

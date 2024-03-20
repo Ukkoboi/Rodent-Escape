@@ -16,9 +16,6 @@ public class SpawnBlocks : MonoBehaviour
         Vector3 minPoint = ground.bounds.min;
         Vector3 maxPoint = ground.bounds.max;
 
-        //int spruce = amount / 2;
-        //int leaftree = amount / 2;
-
         for (int i = 0; i < amountspruce; i++)
         {
             float randomx = Random.Range(minPoint.x, maxPoint.x);
@@ -29,8 +26,6 @@ public class SpawnBlocks : MonoBehaviour
             GameObject spawnedBlock = Instantiate(spruce, position, new Quaternion(), transform);
             spawnedBlock.transform.localScale *= randomSize;
         }
-
-        // Ota tämä käyttöön kun teet lehtipuun
 
         for (int i = 0; i < amountbirch; i++)
         {
