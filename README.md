@@ -3,6 +3,14 @@
 
  You can download different game versions [from my Google Drive](https://drive.google.com/drive/folders/1azWPH_pIacfNtv4SfGLxpjTJ7MHYz9L2?usp=sharing). This repo only contains Unity files what are necessary for Unity to build the game in editor
 
+Version 0.7:
+ - Added 7 more levels
+   - Levels 3-5 are 100% bigger than levels 1-2
+   - Levels 6-8 are 50% bigger than levels 3-5
+   - Levels 9 and 10 are 25% bigger than levels 6-8
+   - Every level have more enemys than last one. No static increase
+   - Bigger levels have more obstacles
+
 Version 0.5:
  - Added score system
    - You get 100 points for each completed level
