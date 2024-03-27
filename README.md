@@ -3,6 +3,10 @@
 
  You can download different game versions [from my Google Drive](https://drive.google.com/drive/folders/1azWPH_pIacfNtv4SfGLxpjTJ7MHYz9L2?usp=sharing). This repo only contains Unity files what are necessary for Unity to build the game in editor
 
+Version 0.8:
+ - Created walking audio for player
+ - Created flying audio for enemy
+
 Version 0.7:
  - Added 7 more levels
    - Levels 3-5 are 100% bigger than levels 1-2
