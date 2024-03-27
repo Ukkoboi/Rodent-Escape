@@ -143,7 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   enemyStartingAmount: 0
-  audioSource: {fileID: 0}
   ui: {fileID: 0}
 --- !u!1 &8861637494241171023
 GameObject:

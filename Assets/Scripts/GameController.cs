@@ -7,7 +7,6 @@ public class GameController : MonoBehaviour
 {
     public Spawner spawner;
     public int enemyStartingAmount;
-    public AudioSource audioSource;
     private GameObject player;
     private GameObject goal;
     public static GameController instance;
@@ -54,7 +53,7 @@ public class GameController : MonoBehaviour
 
             score += 50;
 
-            if (currentSceneIndex == 3)
+            if (currentSceneIndex == 10)
             {
                 SceneManager.LoadScene("End Screen");
             }

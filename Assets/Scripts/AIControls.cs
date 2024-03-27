@@ -35,6 +35,7 @@ public class AIControls : MonoBehaviour
         obstacleMask = LayerMask.GetMask("Obstacle");
         state = State.forward;
         nextState = State.forward;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
