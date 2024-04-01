@@ -1,6 +1,8 @@
 # Rodent-Escape
  Repo for LUT Game development project course
 
+ [Link to game teaser](https://youtu.be/bky8jzLkAho)
+
  You can download different game versions [from my Google Drive](https://drive.google.com/drive/folders/1azWPH_pIacfNtv4SfGLxpjTJ7MHYz9L2?usp=sharing). This repo only contains Unity files what are necessary for Unity to build the game in editor
 
 Version 0.8:
